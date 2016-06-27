@@ -16,7 +16,7 @@ Hanami::Model.configure do
   #    adapter type: :sql, uri: 'postgres://localhost/village_development'
   #    adapter type: :sql, uri: 'mysql://localhost/village_development'
   #
-  adapter type: :file_system, uri: ENV['VILLAGE_DATABASE_URL']
+  adapter type: :sql, uri: ENV['VILLAGE_DATABASE_URL']
 
   ##
   # Database mapping
@@ -30,13 +30,15 @@ Hanami::Model.configure do
   # Alternatively, you can use a block syntax like the following:
   #
   mapping do
-    # collection :users do
-    #   entity     User
-    #   repository UserRepository
-    #
-    #   attribute :id,   Integer
-    #   attribute :name, String
-    # end
+    collection :order_calls do
+      entity     OrderCall
+      repository OrderCallRepository
+    
+      attribute :id,   Integer
+      attribute :name, String
+      attribute :phone, String
+      attribute :comment, String
+    end
   end
 end.load!
 

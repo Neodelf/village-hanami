@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset='utf-8'>
     <title>Web</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=Edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='keywords' content=''>
+    <meta name='description' content=''>
     <%= favicon %>
+
+    <%= stylesheet 'bootstrap.min.css', 'font-awesome.min.css', 'animate.min.css', 'et-line-font.css',
+            'nivo-lightbox.css', 'nivo_themes.css', 'style.css',
+            'https://fonts.googleapis.com/css?family=Roboto:400,300,500' %>
+
+    <%= javascript 'jquery.js', 'bootstrap.min.js', 'smoothscroll.js', 'isotope.js', 'imagesloaded.min.js',
+            'nivo-lightbox.min.js', 'jquery.backstretch.min.js', 'wow.min.js', 'custom.js' %>
   </head>
-  <body>
+  <body data-spy='scroll' data-target='.navbar-collapse' data-offset='50'>
     <%= yield %>
   </body>
 </html>
