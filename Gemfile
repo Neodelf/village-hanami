@@ -9,7 +9,7 @@ gem 'pg'
 gem 'sass'
 gem 'jquery-hanami'
 gem 'haml'
-
+gem 'unicorn'
 
 group :test do
   gem 'minitest'
@@ -17,7 +17,7 @@ group :test do
 end
 
 group :production do
-  gem 'puma'
+  # gem 'puma'
 end
 
 group :development do
