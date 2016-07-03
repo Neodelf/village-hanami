@@ -89,16 +89,16 @@ $(function(){
 
   // NIVO LIGHTBOX
   $('.iso-box-section a').nivoLightbox({
-        effect: 'fadeScale',
+        effect: 'fadeScale'
     });
 
 
   // HOME BACKGROUND SLIDESHOW
   $(function(){
     jQuery(document).ready(function() {
-    $('#home').backstretch([
-       "/assets/home-bg-slideshow1.jpg", 
-       "/assets/home-bg-slideshow2.jpg",
+    $('#main').backstretch([
+       "/assets/bg_1.png",
+       "/assets/bg_2.png"
         ],  {duration: 2000, fade: 750});
     });
   })

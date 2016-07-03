@@ -1,0 +1,16 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'Village', routes.root_path, class: 'navbar-brand'
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li.active= link_to('Участки', routes.steads_path)
+        %li= link_to('Реализованные объекты', '#')
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{href: '#'} Выход

@@ -10,6 +10,8 @@ GEM
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
     dotenv (2.1.1)
+    haml (4.0.6)
+      tilt
     hanami (0.7.3)
       bundler (~> 1.6)
       dotenv (~> 2.0)
@@ -53,6 +55,8 @@ GEM
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
+    jquery-hanami (0.1.0)
+      hanami-assets
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
     mime-types (3.1)
@@ -69,6 +73,7 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (11.2.2)
+    sass (3.4.22)
     sequel (4.35.0)
     shotgun (0.9.1)
       rack (>= 1.0)
@@ -85,12 +90,15 @@ PLATFORMS
 DEPENDENCIES
   bundler
   capybara
+  haml
   hanami (= 0.7.3)
   hanami-bootstrap
   hanami-model (~> 0.5)
+  jquery-hanami
   minitest
   pg
   rake
+  sass
 
 BUNDLED WITH
    1.12.3

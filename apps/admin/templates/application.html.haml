@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    = stylesheet 'bootstrap'
+    = javascript 'jquery', 'bootstrap'
+    %title Admin
+    = favicon
+  %body
+    .container
+      = render partial: 'partials/header'
+      = yield

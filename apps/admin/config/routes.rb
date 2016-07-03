@@ -1,2 +1,4 @@
-# Configure your routes here
-# See: http://www.rubydoc.info/gems/hanami-router/#Usage
+get '/steads/:id', to: 'steads#destroy'
+get '/steads/:id', to: 'steads#update'
+get '/settings', to: 'settings#index', as: 'root'
+resources :steads

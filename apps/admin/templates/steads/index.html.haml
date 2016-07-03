@@ -1,0 +1,20 @@
+%p
+  = link_to 'Добавить участок', routes.new_stead_path, class: 'btn btn-primary'
+%table.table.table-striped.table-hover
+  %tr
+    %th Порядковый номер на карте
+    %th Стоимость за квадратный метр
+    %th Площадь
+    %th Стоимость участка
+    %th Описание
+    %th Действия
+  - steads.each do |stead|
+    %tr
+      %td= stead.serial_number
+      %td= stead.cost_square_meter
+      %td= stead.total_area
+      %td= stead.cost_square_meter * stead.total_area
+      %td= stead.description
+      %th
+        = link_to 'Редактировать', routes.edit_stead_path(id: stead.id)
+        = link_to 'Удалить', routes.stead_path(id: stead.id), {method: :delete}

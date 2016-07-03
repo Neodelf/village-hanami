@@ -5,6 +5,8 @@ Template 2075 Digital Team
 http://www.tooplate.com/view/2075-digital-team
 
 */
+$average_blue: #12544D;
+$average_green: #587D1B;
 
 body {
     background: #ffffff;
@@ -51,7 +53,7 @@ hr {
 }
 
 .section-title strong {
-	color: #00C6D7;
+	color: $average_blue;
   	font-size: 56px;
 }
 
@@ -114,7 +116,7 @@ preloader section
   margin: 0 auto;
   width: 20%;
   height: 20%;
-  background-color: #00c6d7;
+  background-color: $average_blue;
   border-radius: 100%;
   -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out;
           animation: sk-circleBounceDelay 1.2s infinite ease-in-out;
@@ -211,16 +213,17 @@ preloader section
 navigation section
 ========================================================================== */
 .custom-navbar {
-    background: #4B4B4B;
+    //background: $average_green;
+    background: white;
     margin-bottom: 0;
 }
 .custom-navbar .navbar-brand  {
-  color: #00c6d7;
+  color: $average_blue;
   font-weight: 600;
   font-size: 24px;
 }
 .custom-navbar .navbar-brand .navbar-toggle {
-    background: #00c6d7;
+    background: $average_blue;
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
@@ -240,34 +243,34 @@ navigation section
   outline: none;
 }
 .custom-navbar .nav li.active > a {
-      color: #00c6d7;
+      color: $average_blue;
     }
 .custom-navbar .navbar-toggle {
         border: none;
         padding-top: 10px;
     }
 .custom-navbar .navbar-toggle .icon-bar {
-        background: #00c6d7;
+        background: $average_blue;
         border-color: transparent;
     }
 @media(min-width:768px){
     .custom-navbar {
-            background: #4B4B4B;
+            background: $average_green;
             padding: 10px;
             border-bottom: 0;
             background: 0 0;
          }
     .custom-navbar.top-nav-collapse {
             padding: 8px;
-            background: #4B4B4B;
+            background: #406fa9;
         }
 }
 
 
 /* ==========================================================================
-home section
+main section
 ========================================================================== */
-#home {
+#main {
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -280,16 +283,16 @@ home section
   height: 100vh;
   text-align: center;
 }
-#home h1 {
+#main h1 {
   font-size: 40px;
 }
-#home h3 {
+#main h3 {
   font-size: 14px;
 }
-#home hr {
+#main hr {
   width: 240px;
 }
-#home .btn {
+#main .btn {
   background: transparent;
   border: 4px solid #ffffff;
   border-radius: 0;
@@ -302,15 +305,15 @@ home section
   margin-right: 16px;
   transition: all 0.4s ease-in-out;
 }
-#home .btn:hover {
-  background: #00c6d7;
+#main .btn:hover {
+  background: $average_blue;
   border-color: transparent;
 }
-#home .btn-danger {
-  background: #00c6d7;
+#main .btn-danger {
+  background: $average_blue;
   border-color: transparent;
 }
-#home .btn-danger:hover {
+#main .btn-danger:hover {
 	border: 4px solid #ffffff;
   	border-radius: 0;
 	background: transparent;
@@ -366,7 +369,7 @@ about section
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #00c6d7;
+  color: $average_blue;
   cursor: default;
   background-color: transparent;
   border: 1px solid transparent;
@@ -392,7 +395,7 @@ team section
   text-align: center;
 }
 #team h3 {
-  color: #00c6d7;
+  color: $average_blue;
   font-size: 14px;
   font-weight: bold;
 }
@@ -445,7 +448,7 @@ team section
 }
 
 #team .social-icon li a:hover {
-  color: #00c6d7;
+  color: $average_blue;
 }
 
 /* ==========================================================================
@@ -492,7 +495,7 @@ portfolio section
 .filter-wrapper li .selected,
 .filter-wrapper li a:focus,
 .filter-wrapper li a:hover {
-    color: #00c6d7;
+    color: $average_blue;
     outline: none;
   }
 
@@ -587,7 +590,7 @@ pricing section
   text-transform: uppercase;
 }
 #pricing .plan-one .btn {
-  background-color: #00c6d7;
+  background-color: $average_blue;
 }
 #pricing .plan-two .btn {
   background-color: #ffa400;
@@ -639,8 +642,8 @@ contact section
   height: 40px;
 }
 #contact input[type="submit"] {
-  background: #00c6d7;
-  border: 3px solid #00c6d7;
+  background: $average_blue;
+  border: 3px solid $average_blue;
   letter-spacing: 1px;
   margin-top: 18px;
   height: 50px;
@@ -683,7 +686,7 @@ footer p {
   transition: all 0.4s ease-in-out;
 }
 .social-icon li a:hover {
-  color: #00c6d7;
+  color: $average_blue;
 }
 
 @media screen and (min-width: 992px) {
@@ -699,14 +702,14 @@ footer p {
 media quires for mobile
 ========================================================================== */
 @media (max-width: 440px) {
-  #home {
+  #main {
     padding-top: 320px;
     padding-bottom: 320px;
   }
-  #home h1 {
+  #main h1 {
     font-size: 22px;
   }
-  #home h3 {
+  #main h3 {
     font-size: 12px;
   }
 }

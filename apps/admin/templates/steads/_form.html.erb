@@ -1,0 +1,22 @@
+<%=
+    form_for form, class: 'form' do
+      div(class:'form-group') do
+        label 'Стоимость за квадратный метр'
+        number_field :cost_square_meter, class: 'form-control'
+      end
+      div(class:'form-group') do
+        label 'Порядковый номер (согласно карте)'
+        number_field :serial_number, class: 'form-control'
+      end
+      div(class:'form-group') do
+        label 'Площадь участка'
+        number_field :total_area, class: 'form-control'
+      end
+      div(class:'form-group') do
+        label 'Описание'
+        text_area :description, class: 'form-control'
+      end
+
+      submit submit_label, class: 'btn btn-success'
+    end
+%>
