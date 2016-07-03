@@ -17,5 +17,13 @@ group :test do
 end
 
 group :production do
-  # gem 'puma'
+  gem 'puma'
+end
+
+group :development do
+  gem 'locum'
+  gem 'capistrano', '~> 3.1'
+  gem 'capistrano-bundler', '~> 1.1.2'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-unicorn'
 end
